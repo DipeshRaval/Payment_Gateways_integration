@@ -8,10 +8,10 @@ const session = require("express-session");
 
 const path = require("path");
 
-// const instance = new Razorpay({
-//   key_id: "rzp_test_RbqG66e5Y7kKvZ",
-//   key_secret: "3Z85W9omZDcbVaQ6Kz6kRvaV",
-// });
+const instance = new Razorpay({
+  key_id: "rzp_test_RbqG66e5Y7kKvZ",
+  key_secret: "3Z85W9omZDcbVaQ6Kz6kRvaV",
+});
 
 app.use(
   session({
@@ -32,10 +32,10 @@ app.use(express.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname + "/public")));
 
-const instance = new Razorpay({
-  key_id: process.env.KEY_ID,
-  key_secret: process.env.KEY_SECRATE,
-});
+// const instance = new Razorpay({
+//   key_id: process.env.KEY_ID,
+//   key_secret: process.env.KEY_SECRATE,
+// });
 
 // for the flash
 app.use(function (req, res, next) {
