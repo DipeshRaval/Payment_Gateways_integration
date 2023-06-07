@@ -1,0 +1,181 @@
+/* default */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* body style  */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+
+/* home sec  */
+.home {
+  background: url("/bgg1.jpeg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* navbar style  */
+.logo {
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 5px 0px;
+}
+nav ul li {
+  font-size: 1.5rem;
+  margin: 20px 5px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav li a:hover {
+  background-color: rgb(103, 101, 101);
+  border-radius: 30%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+hr {
+  width: 90vw;
+  margin: auto;
+}
+
+/* section 1 style  */
+
+.sec1 {
+  margin-top: 100px;
+  width: 40vw;
+  padding: 20px;
+  margin-left: 70px;
+  height: 40vh;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sec1head {
+  font-family: cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.sec1para {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: rgb(220, 60, 60);
+}
+
+.sec2 {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sec2head {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.itemall {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  border-radius: 30px;
+  width: 30vw;
+  box-shadow: 2px 3px 12px 4px grey;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.item img {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 30px auto;
+}
+
+.itemname {
+  text-align: center;
+}
+
+.itempara {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+.item h4 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buybtn {
+  width: 150px;
+  height: 30px;
+  display: block;
+  margin: 20px auto;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  border-radius: 12px;
+}
+
+.buybtn:hover {
+  background-color: rgb(171, 11, 11);
+}
+
+footer {
+  margin-top: 40px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.msg {
+  margin: 20px 0;
+  text-align: center;
+  color: black;
+  background-color: antiquewhite;
+  padding: 10px;
+  font-size: 18px;
+}

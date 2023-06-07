@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food test in Town</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="home">
+        <nav>
+            <div >
+                <img class="logo" src="assets/logo.png" alt="MyWeb">
+            </div>
+            <% if(messages && messages.success && messages.success.length > 0)  { %>
+                <% for(var i=0; i<messages.success.length; i++) { %>
+                  <li class="msg"> <%= messages.success[i] %></li>
+                <% } %>
+              <% } %>
+            <hr>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Section</a></li>
+                <li><a href="#">Contetc Us</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <section class="sec1">
+            <p class="intro">There are amny option for you</p>
+            <h1 class="sec1head">Tasty Food Items For You</h1>
+            <p class="sec1para">Here we deliverd very tasty and amazing food to the customer.Our overll
+                annual profit is 2.1 Billians. In our india 523 shops are present in today.</p>
+            <a href="#sec2head"><button class="btn">Order Now</button></a>
+        </section>
+    </div>
+    <section class="sec2">
+        <h2 id="sec2head" class="sec2head">About Our Items</h2>
+        <div class="itemall">
+            <div class="item">
+                <img src="assets/burger.jpeg" alt="">
+                <h2 class="itemname">Burger</h2>
+                <p class="itempara">the best burgers are like life — messy and topped with bacon.</p>
+                <h4>Rs 80 Rupee</h4>
+                <a href="/order/burger/80"><button class="buybtn">Buy Now</button></a>
+            </div>
+            <div class="item">
+                <img class src="assets/pizza.jpeg" alt="">
+                <h2 class="itemname">Puffiza</h2>
+                <p class="itempara">people disappoint, but pizza never does.</p>
+                <h4>Rs 150 Rupee</h4>
+                <a href="/order/pizza/150"><button class="buybtn">Buy Now</button></a>
+            </div>
+    </section>
+    <footer>
+        Copyrights &copy; reserved by Dipesh Raval
+    </footer>
+</body>
+</html>
